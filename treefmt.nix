@@ -1,0 +1,22 @@
+# SPDX-FileCopyrightText: 2024 Akira Komamura
+# SPDX-License-Identifier: Unlicense
+{
+  projectRootFile = "treefmt.nix";
+
+  # See https://github.com/numtide/treefmt-nix#supported-programs
+
+  programs.gofmt.enable = true;
+
+  # GitHub Actions
+  programs.yamlfmt.enable = true;
+  programs.actionlint.enable = true;
+
+  # Markdown
+  programs.mdformat.enable = true;
+
+  # Sql
+  programs.sqlfluff.enable = true;
+
+  # Nix
+  programs.nixfmt.enable = true;
+}
