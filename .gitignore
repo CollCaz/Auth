@@ -1,2 +1,5 @@
 *.env*
 .direnv/
+
+go.mod
+go.sum
